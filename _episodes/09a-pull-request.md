@@ -20,14 +20,6 @@ will be the "Requester". The goal is that the Requester add changes into
 the Owner's repository, but using a pull request. We will switch roles at the end, so both persons will
 play Owner and Requester.
 
-> ## Practicing By Yourself
->
-> If you're working through this lesson on your own, you can carry on by opening
-> a second terminal window.
-> This window will represent your partner, working on another computer. You
-> won't need to give anyone access on GitHub, because both 'partners' are you.
-{: .callout}
-
 The Requester needs to make their own copy of the Owner's repository, on GitHub.
 On GitHub, go to the Owner's repository and click "Fork" at the top right.
 
