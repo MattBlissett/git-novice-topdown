@@ -31,12 +31,12 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
-1/2 onion
-cilantro
+2 sausages
+butter
 pepper
-1/2 tomato
+½ tomato
 ~~~
 {: .output}
 
@@ -53,10 +53,10 @@ index a18d584..8b1782d 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -3,3 +3,4 @@ salt
- 1/2 onion
- cilantro
+ 2 sausages
+ butter
  pepper
-+1/2 tomato
++½ tomato
 ~~~
 {: .output}
 
@@ -84,12 +84,12 @@ index 0c5ef26..8b1782d 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,3 +1,6 @@
- 4 avocados
+ 2 eggs
  salt
- 1/2 onion
-+cilantro
+ 2 sausages
++butter
 +pepper
-+1/2 tomato
++½ tomato
 ~~~
 {: .output}
 
@@ -102,7 +102,7 @@ $ git show HEAD~2 ingredients.txt
 
 ~~~
 commit 29980dee91ca6b5588153a22598aafddc1a55bc2
-Author: The Guacmaster <guacmaster@guac.guac>
+Author: The Guacmaster <breakfastmaster@breakfast.breakfast>
 Date:   Thu Aug 3 15:49:06 2017 -0400
 
     Add onions
@@ -112,9 +112,9 @@ index 075e446..0c5ef26 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,2 +1,3 @@
- 4 avocados
+ 2 eggs
  salt
-+1/2 onion
++2 sausages
 ~~~
 {: .output}
 
@@ -148,12 +148,12 @@ index 075e446..8b1782d 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,2 +1,6 @@
- 4 avocados
+ 2 eggs
  salt
-+1/2 onion
-+cilantro
++2 sausages
++butter
 +pepper
-+1/2 tomato
++½ tomato
 ~~~
 {: .output}
 
@@ -172,12 +172,12 @@ index 075e446..8b1782d 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,2 +1,6 @@
- 4 avocados
+ 2 eggs
  salt
-+1/2 onion
-+cilantro
++2 sausages
++butter
 +pepper
-+1/2 tomato
++½ tomato
 ~~~
 {: .output}
 
@@ -193,13 +193,13 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
-1/2 onion
-cilantro
+2 sausages
+butter
 pepper
-1/2 tomato
-3 cups cayenne pepper
+½ tomato
+300g cayenne pepper
 ~~~
 {: .output}
 
@@ -233,10 +233,10 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
-1/2 onion
-cilantro
+2 sausages
+butter
 pepper
 ~~~
 {: .output}
@@ -260,7 +260,7 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
 ~~~
 {: .output}
@@ -399,8 +399,8 @@ moving backward and forward in time becomes much easier.
 > What is the output of cat equipment.txt at the end of this set of commands?
 >
 > ~~~
-> $ cd guac
-> $ nano equipment.txt #input the following text: mixing bowl
+> $ cd breakfast
+> $ nano equipment.txt #input the following text: frying pan
 > $ git add equipment.txt
 > $ nano equipment.txt #add the following text: spoon
 > $ git commit -m "Compile the utensils we need"
@@ -419,14 +419,14 @@ moving backward and forward in time becomes much easier.
 > 2.
 >
 > ~~~
-> mixing bowl
+> frying pan
 > ~~~
 > {: .output}
 >
 > 3.
 >
 > ~~~
-> mixing bowl
+> frying pan
 > spoon
 > ~~~
 > {: .output}
@@ -442,16 +442,16 @@ moving backward and forward in time becomes much easier.
 > >
 > > Line by line:
 > > ~~~
-> > $ cd guac
+> > $ cd breakfast
 > > ~~~
 > > {: .bash}
-> > Enters into the 'guac' directory
+> > Enters into the 'breakfast' directory
 > >
 > > ~~~
-> > $ nano equipment.txt #input the following text: mixing bowl
+> > $ nano equipment.txt #input the following text: frying pan
 > > ~~~
 > > {: .bash}
-> > We created a new file and wrote a sentence in it, but the file is not tracked by git.  
+> > We created a new file and wrote a sentence in it, but the file is not tracked by git.
 > >
 > > ~~~
 > > $ git add equipment.txt
@@ -469,7 +469,7 @@ moving backward and forward in time becomes much easier.
 > > $ git commit -m "Compile the utensils we need"
 > > ~~~
 > > {: .bash}
-> > The changes that were staged (mixing bowl) have been committed. The changes that were not staged (spoon) have not. Our local working copy is different than the copy in our local repository.
+> > The changes that were staged (frying pan) have been committed. The changes that were not staged (spoon) have not. Our local working copy is different than the copy in our local repository.
 > >
 > > ~~~
 > > $ git checkout HEAD equipment.txt
@@ -509,7 +509,7 @@ moving backward and forward in time becomes much easier.
 > Exploring history is an important part of git, often it is a challenge to find
 > the right commit ID, especially if the commit is from several months ago.
 >
-> Imagine the `guac` project has more than 50 recipes that we've collected from friends and family.
+> Imagine the `breakfast` project has more than 50 recipes that we've collected from friends and family.
 > You would like to find a commit when specific text in `ingredients.txt` was modified.
 > When you type `git log`, a very long list appeared,
 > How can you narrow down the search?

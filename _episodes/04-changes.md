@@ -29,7 +29,7 @@ $ nano ingredients.txt
 Type the line below into the `ingredients.txt` file:
 
 ~~~
-4 avocados
+2 eggs
 salt
 ~~~
 {: .output}
@@ -52,7 +52,7 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
 ~~~
 {: .output}
@@ -165,8 +165,8 @@ $ git log
 
 ~~~
 commit 172a2f0d1da2034b94fb3a47ad182bfc04172caf
-Author: The Guacmaster <guacmaster@guac.guac>
-Date:   Thu Aug 3 15:47:15 2017 -0400
+Author: Matthew <matthew@example.org>
+Date:   Thu Aug 3 15:47:15 2017 +0200
 
     Start our shopping list
 ~~~
@@ -197,9 +197,9 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
-1/2 onion
+2 sausages
 ~~~
 {: .output}
 
@@ -242,9 +242,9 @@ index 075e446..0c5ef26 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,2 +1,3 @@
- 4 avocados
+ 2 eggs
  salt
-+1/2 onion
++2 sausages
 ~~~
 {: .output}
 
@@ -266,7 +266,7 @@ The output is cryptic because it is actually a series of computer
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add onions"
+$ git commit -m "Add sausages"
 $ git status
 ~~~
 {: .bash}
@@ -289,12 +289,12 @@ Let's fix that:
 
 ~~~
 $ git add ingredients.txt
-$ git commit -m "Add onions"
+$ git commit -m "Add sausages"
 ~~~
 {: .bash}
 
 ~~~
-[master 29980de] Add onions
+[master 29980de] Add sausages
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -345,10 +345,10 @@ $ cat ingredients.txt
 {: .bash}
 
 ~~~
-4 avocados
+2 eggs
 salt
-1/2 onion
-cilantro
+2 sausages
+butter
 ~~~
 {: .output}
 
@@ -363,10 +363,10 @@ index 0c5ef26..fd4db14 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,3 +1,4 @@
- 4 avocados
+ 2 eggs
  salt
- 1/2 onion
-+cilantro
+ 2 sausages
++butter
 ~~~
 {: .output}
 
@@ -397,10 +397,10 @@ index 0c5ef26..fd4db14 100644
 --- a/ingredients.txt
 +++ b/ingredients.txt
 @@ -1,3 +1,4 @@
- 4 avocados
+ 2 eggs
  salt
- 1/2 onion
-+cilantro
+ 2 sausages
++butter
 ~~~
 {: .output}
 
@@ -410,12 +410,12 @@ and what's in the staging area.
 Let's save our changes:
 
 ~~~
-$ git commit -m "Add cilantro"
+$ git commit -m "Add butter"
 ~~~
 {: .bash}
 
 ~~~
-[master e744ac7] Add cilantro
+[master e744ac7] Add butter
  1 file changed, 1 insertion(+)
 ~~~
 {: .output}
@@ -442,19 +442,19 @@ $ git log
 
 ~~~
 commit e744ac7a2605fa15d55f75b0f5e00b61e756d815
-Author: The Guacmaster <guacmaster@guac.guac>
+Author: Matthew <matthew@example.org>
 Date:   Thu Aug 3 15:51:22 2017 -0400
 
-    Add cilantro
+    Add butter
 
 commit 29980dee91ca6b5588153a22598aafddc1a55bc2
-Author: The Guacmaster <guacmaster@guac.guac>
+Author: Matthew <matthew@example.org>
 Date:   Thu Aug 3 15:49:06 2017 -0400
 
-    Add onions
+    Add sausages
 
 commit 172a2f0d1da2034b94fb3a47ad182bfc04172caf
-Author: The Guacmaster <guacmaster@guac.guac>
+Author: Matthew <matthew@example.org>
 Date:   Thu Aug 3 15:47:15 2017 -0400
 
     Start our shopping list
@@ -475,7 +475,7 @@ Date:   Thu Aug 3 15:47:15 2017 -0400
 > $ git status
 > ~~~
 > {: .bash}
-> 
+>
 > Note, our newly created empty directory `directory` does not appear in
 > the list of untracked files even if we explicitly add it (_via_ `git add`) to our
 > repository. This is the reason why you will sometimes see `.gitkeep` files
@@ -507,8 +507,8 @@ repository (`git commit`):
 > last commit made to `ingredients.txt`?
 >
 > 1. "Changes"
-> 2. "Added line 'cilantro' as last line of ingredients.txt"
-> 3. "Add cilantro"
+> 2. "Added line 'butter' as last line of ingredients.txt"
+> 3. "Add butter"
 >
 > > ## Solution
 > > Answer 1 is not descriptive enough,
@@ -524,10 +524,10 @@ repository (`git commit`):
 >
 > 1. `$ git commit -m "my recent changes"`
 >
-> 2. `$ git init myfile.txt`  
+> 2. `$ git init myfile.txt`
 >    `$ git commit -m "my recent changes"`
 >
-> 3. `$ git add myfile.txt`  
+> 3. `$ git add myfile.txt`
 >    `$ git commit -m "my recent changes"`
 >
 > 4. `$ git commit -m myfile.txt "my recent changes"`
@@ -561,10 +561,10 @@ repository (`git commit`):
 > > {: .bash}
 > >
 > > ~~~
-> > 4 avocados
+> > 2 eggs
 > > salt
-> > 1/2 onion
-> > cilantro
+> > 2 sausages
+> > butter
 > > pepper
 > > ~~~
 > > {: .output}
@@ -576,11 +576,9 @@ repository (`git commit`):
 > > {: .bash}
 > >
 > > ~~~
-> > 1. Wash the avocados and rinse the parsley and onion.
-> > 2. Dice the onion finely. Chop the cilantro roughly. Place in mixing bowl.
-> > 3. Slice open each avocado and scoop out the flesh into the bowl.
-> > 4. Smash avocado flesh.
-> > 5. Mix all ingredients well. Add salt and pepper to taste.
+> > 1. Fry both eggs and use a bit of salt
+> > 2. Fry the sausages too, in the butter
+> > 3. Add pepper to taste
 > > ~~~
 > > {: .output}
 > >
@@ -599,7 +597,7 @@ repository (`git commit`):
 > > ~~~
 > > {: .bash}
 > >
-> > Now the files are ready to commit. You can check that using `git status`. 
+> > Now the files are ready to commit. You can check that using `git status`.
 > > If you are ready to commit use:
 > >
 > > ~~~

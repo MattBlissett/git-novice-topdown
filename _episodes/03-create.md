@@ -15,12 +15,12 @@ we can start using it.
 Let's create a directory for our work and then move into that directory:
 
 ~~~
-$ mkdir guac
-$ cd guac
+$ mkdir breakfast
+$ cd breakfast
 ~~~
 {: .bash}
 
-Then we tell Git to make `guac` a [repository]({{ page.root }}/reference/#repository)—a place where
+Then we tell Git to make `breakfast` a [repository]({{ page.root }}/reference/#repository)—a place where
 Git can store versions of our files:
 
 ~~~
@@ -37,7 +37,7 @@ $ ls
 {: .bash}
 
 But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `guac` called `.git`:
+we can see that Git has created a hidden directory within `breakfast` called `.git`:
 
 ~~~
 $ ls -a
@@ -72,22 +72,22 @@ nothing to commit (create/copy files and use "git add" to track)
 
 > ## Places to Create Git Repositories
 >
-> We start a new project, `family_recipes`, related to our `guac` project.
+> We start a new project, `family_recipes`, related to our `breakfast` project.
 > We enter the following sequence of commands to
 > create one Git repository inside another:
 >
 > ~~~
 > $ cd                      # return to home directory
-> $ mkdir guac              # make a new directory guac
-> $ cd guac                 # go into guac
-> $ git init                # make the guac directory a Git repository
-> $ mkdir family_recipes    # make a sub-directory guac/family_recipes
-> $ cd family_recipes       # go into guac/family_recipes
+> $ mkdir breakfast              # make a new directory breakfast
+> $ cd breakfast                 # go into breakfast
+> $ git init                # make the breakfast directory a Git repository
+> $ mkdir family_recipes    # make a sub-directory breakfast/family_recipes
+> $ cd family_recipes       # go into breakfast/family_recipes
 > $ git init                # make the family_recipes sub-directory a Git repository
 > ~~~
 > {: .bash}
 >
-> Why is it a bad idea to do this? (Notice here that the `guac` project is now also tracking the entire `family_recipes` repository.)
+> Why is it a bad idea to do this? (Notice here that the `breakfast` project is now also tracking the entire `family_recipes` repository.)
 > How can we undo our last `git init`?
 >
 > > ## Solution
@@ -113,11 +113,11 @@ nothing to commit (create/copy files and use "git add" to track)
 > >
 > > ~~~
 > > $ touch dad mom aunt_phoebe maria               # create recipe files
-> > $ cd ..                                         # return to guac directory
+> > $ cd ..                                         # return to breakfast directory
 > > $ ls family_recipes                             # list contents of the family_recipes directory
-> > $ git add family_recipes/*                      # add all contents of guac/family_recipes
+> > $ git add family_recipes/*                      # add all contents of breakfast/family_recipes
 > > $ git status                                    # show family_recipes files in staging area
-> > $ git commit -m "add recipes from relatives"    # commit guac/family_recipes to guac Git repository
+> > $ git commit -m "add recipes from relatives"    # commit breakfast/family_recipes to breakfast Git repository
 > > ~~~
 > > {: .bash}
 > >

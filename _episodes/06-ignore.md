@@ -15,11 +15,11 @@ What if we have files that we do not want Git to track for us?
 These could be backup files created by our editor, or intermediate files
 created during data analysis. 
 
-Our guac recipe has a "secret ingredient" that we don't want anyone to know about.
+Our breakfast recipe has a "secret ingredient" that we don't want anyone to know about.
 Our first thought is to hide it among lots of similar files, so we do this:
 
 ~~~
-$ cd guac
+$ cd breakfast
 $ touch secret_sauce_1.txt secret_sauce_2.txt secret_sauce_3.txt secret_sauce_4.txt
 ~~~
 {: .bash}

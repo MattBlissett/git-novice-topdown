@@ -27,11 +27,11 @@ and cons of this in the final section of this lesson.
 
 Let's start by sharing the changes we've made to our current project with the
 world.  Log in to GitHub, then click on the icon in the top right corner to
-create a new repository called `guac`:
+create a new repository called `breakfast`:
 
 ![Creating a Repository on GitHub (Step 1)](../fig/github-create-repo-01.png)
 
-Name your repository "guac" and then click "Create Repository":
+Name your repository "breakfast" and then click "Create Repository":
 
 ![Creating a Repository on GitHub (Step 2)](../fig/github-create-repo-02.png)
 
@@ -43,8 +43,8 @@ information on how to configure your local repository:
 This effectively does the following on GitHub's servers:
 
 ~~~
-$ mkdir guac
-$ cd guac
+$ mkdir breakfast
+$ cd breakfast
 $ git init
 ~~~
 {: .bash}
@@ -77,16 +77,16 @@ SSH to HTTPS.
 
 ![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
 
-Copy that URL from the browser, go into the local `guac` repository, and run
+Copy that URL from the browser, go into the local `breakfast` repository, and run
 this command:
 
 ~~~
-$ git remote add origin https://github.com/guacmaster/guac.git
+$ git remote add origin https://github.com/breakfastmaster/breakfast.git
 ~~~
 {: .bash}
 
 Make sure to use the URL for your repository rather than the master chef's: the only
-difference should be your username instead of `guacmaster`.
+difference should be your username instead of `breakfastmaster`.
 
 We can check that the command has worked by running `git remote -v`:
 
@@ -96,8 +96,8 @@ $ git remote -v
 {: .bash}
 
 ~~~
-origin   https://github.com/guacmaster/guac.git (push)
-origin   https://github.com/guacmaster/guac.git (fetch)
+origin   https://github.com/breakfastmaster/breakfast.git (push)
+origin   https://github.com/breakfastmaster/breakfast.git (fetch)
 ~~~
 {: .output}
 
@@ -118,7 +118,7 @@ Delta compression using up to 4 threads.
 Compressing objects: 100% (6/6), done.
 Writing objects: 100% (13/13), 1.19 KiB | 0 bytes/s, done.
 Total 13 (delta 0), reused 0 (delta 0)
-To https://github.com/guacmaster/guac.git
+To https://github.com/breakfastmaster/breakfast.git
  * [new branch]      master -> master
 ~~~
 {: .output}
@@ -189,7 +189,7 @@ $ git pull origin master
 {: .bash}
 
 ~~~
-From https://github.com/guacmaster/guac
+From https://github.com/breakfastmaster/breakfast
  * branch            master     -> FETCH_HEAD
 Already up-to-date.
 ~~~
@@ -201,7 +201,7 @@ GitHub, though, this command would download them to our local repository.
 
 > ## GitHub GUI
 >
-> Browse to your `guac` repository on GitHub.
+> Browse to your `breakfast` repository on GitHub.
 > Under the Code tab, find and click on the text that says "XX commits" (where "XX" is some number).
 > Hover over, and click on, the three buttons to the right of each commit.
 > What information can you gather/explore from these buttons?

@@ -18,7 +18,7 @@
 			<rect id="rect3498" x="197" y="59" fill="none" width="70" height="28"/>
 			<text id="text3500" transform="matrix(1 0 0 1 196.9999 71.4199)" font-family="'Consolas'" font-size="18">.git</text>
 		</g>
-		<text id="text3502" transform="matrix(1 0 0 1 15.9999 278.707)" font-family="'Helvetica'" font-size="13.5">https://github.com/guacmaster/guac.git</text>
+		<text id="text3502" transform="matrix(1 0 0 1 15.9999 278.707)" font-family="'Helvetica'" font-size="13.5">https://github.com/breakfastmaster/breakfast.git</text>
 	</g>
 	<g id="g3504">
 		<g id="Layer_6">
@@ -31,10 +31,10 @@
 			<text id="text14" transform="matrix(1 0 0 1 196.9999 71.4199)" font-family="'Consolas'" font-size="18">.git</text>
 		</g>
 		<rect id="rect16" x="16" y="19" fill="none" width="195.585" height="24.449"/>
-		<text id="text18" transform="matrix(1 0 0 1 15.9999 28.707)" font-family="'Helvetica'" font-size="13.5">~/guacmaster/guac</text>
+		<text id="text18" transform="matrix(1 0 0 1 15.9999 28.707)" font-family="'Helvetica'" font-size="13.5">~/breakfastmaster/breakfast</text>
 		<g id="Layer_3">
 			<g id="g37">
-				
+
 					<linearGradient id="path46_1_" gradientUnits="userSpaceOnUse" x1="253.642" y1="350.0146" x2="253.642" y2="294.7666" gradientTransform="matrix(1 0 0 -1 49.8574 474)">
 					<stop  offset="0.0982" style="stop-color:#C4C4C4"/>
 					<stop  offset="0.5326" style="stop-color:#686868"/>
@@ -52,13 +52,13 @@
 				</g>
 			</g>
 			<g id="g52">
-				<polygon id="polygon54" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="328.542,149.459 341.719,134.965 
+				<polygon id="polygon54" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="328.542,149.459 341.719,134.965
 					282.411,134.965 269.235,149.459 				"/>
 				<line id="line56" fill="none" stroke="#70BF41" stroke-width="2" x1="282.411" y1="140.894" x2="331.165" y2="140.894"/>
 			</g>
 		</g>
 		<g id="Layer_4">
-			
+
 				<linearGradient id="path66_1_" gradientUnits="userSpaceOnUse" x1="487.3183" y1="416.3418" x2="487.3183" y2="361.0879" gradientTransform="matrix(1 0 0 -1 49.8574 474)">
 				<stop  offset="0.0982" style="stop-color:#C4C4C4"/>
 				<stop  offset="0.5326" style="stop-color:#686868"/>
@@ -87,7 +87,7 @@
 					C564.614,90.409,587.021,82.896,587.021,73.628z"/>
 			</g>
 			<g id="g80">
-				<polygon id="polygon82" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="560.039,80.875 573.216,66.381 
+				<polygon id="polygon82" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" points="560.039,80.875 573.216,66.381
 					513.908,66.381 500.732,80.875 				"/>
 				<line id="line84" fill="none" stroke="#70BF41" stroke-width="2" x1="513.908" y1="72.311" x2="562.662" y2="72.311"/>
 			</g>
