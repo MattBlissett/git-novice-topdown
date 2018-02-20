@@ -287,11 +287,11 @@ remote: Counting objects: 6, done.
 remote: Compressing objects: 100% (2/2), done.
 remote: Total 6 (delta 4), reused 6 (delta 4), pack-reused 0
 Unpacking objects: 100% (6/6), done.
-From https://github.com/breakfastmaster/conversions
+From https://github.com/breakfastmaster/breakfast
    5fa9f4b..3fec3a2  master     -> origin/master
 Updating 5fa9f4b..3fec3a2
 Fast-forward
- conversion.py | 6 ++++++
+ ingredients.txt | 6 ++++++
  1 file changed, 6 insertions(+)
 ~~~
 {: .output}

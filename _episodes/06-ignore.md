@@ -13,10 +13,10 @@ keypoints:
 
 What if we have files that we do not want Git to track for us?
 These could be backup files created by our editor, or intermediate files
-created during data analysis. 
+created during data analysis.
 
-Our breakfast recipe has a "secret ingredient" that we don't want anyone to know about.
-Our first thought is to hide it among lots of similar files, so we do this:
+Our breakfast recipe has some "secret ingredients" that we don't want anyone to know about.
+We do this:
 
 ~~~
 $ cd breakfast
@@ -46,7 +46,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Putting these files under version control would be a waste of disk space.
 What's worse, having them all listed could distract us from changes that actually matter.
-And, in fact, we don't want to call attention to these files at all. 
+And, in fact, we don't want to call attention to these files at all.
 So let's tell Git to ignore them.
 
 We do this by creating a file in the root directory of our project called `.gitignore`:
@@ -62,7 +62,7 @@ secret_sauce*
 ~~~
 {: .output}
 
-These patterns tell Git to ignore any file whose name begins with 
+These patterns tell Git to ignore any file whose name begins with
 `secret_sauce`.
 (If any of these files were already being tracked,
 Git would continue to track them.)
