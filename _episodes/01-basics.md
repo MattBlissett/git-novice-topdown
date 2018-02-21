@@ -12,6 +12,10 @@ keypoints:
 - "Version control also allows many people to work in parallel."
 ---
 
+> ## Follow along
+> ** http://mb.gbif.org/git **
+{: .callout}
+
 We'll start by exploring how version control can be used
 to keep track of what one person did and when.
 Even if you aren't collaborating with other people,
