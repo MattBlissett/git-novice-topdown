@@ -13,7 +13,7 @@ keypoints:
 ---
 
 > ## Follow along
-> (http://mb.gbif.org/git)[http://mb.gbif.org/git]
+> http://mb.gbif.org/git
 {: .callout}
 
 We'll start by exploring how version control can be used
